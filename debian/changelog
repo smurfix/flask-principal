@@ -1,0 +1,5 @@
+flask-principal (0.4.0-1) unstable; urgency=low
+
+  * Initial release. Closes: 718555
+
+ -- Tonnerre LOMBARD <tonnerre@ancient-solutions.com>  Thu, 01 Aug 2013 19:40:33 +0200

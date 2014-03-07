@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export PYBUILD_DESTDIR_python2=debian/python-flask-principal/
+export PYBUILD_DESTDIR_python2-dbg=debian/python-flask-principal-dbg/
+export PYBUILD_DESTDIR_python3=debian/python3-flask-principal/
+export PYBUILD_DESTDIR_python3-dbg=debian/python3-flask-principal-dbg/
+export PYBUILD_DISABLE_python3=test
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild

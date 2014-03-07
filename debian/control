@@ -1,0 +1,42 @@
+Source: flask-principal
+Maintainer: Tonnerre LOMBARD <tonnerre@ancient-solutions.com>
+Homepage: https://flask-principal.readthedocs.org/
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9), dh-python, python-all (>= 2.6.6-3),
+ python-blinker, python-flask, python-nose,
+ python-setuptools (>= 0.6b3), python3-all (>= 3.2), python3-flask,
+ python3-setuptools (>= 0.6b3)
+Standards-Version: 3.9.4
+
+Package: python-flask-principal
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: identity management for Flask
+ Flask-Principal provides a very loose framework to tie in providers of two
+ types of service, often located in different parts of a web application:
+ .
+  - Authentication providers
+  - User information providers
+ .
+ For example, an authentication provider may be oauth, using Flask-OAuth and
+ the user information may be stored in a relational database. Looseness of
+ the framework is provided by using signals as the interface.
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-flask-principal
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: identity management for Flask
+ Flask-Principal provides a very loose framework to tie in providers of two
+ types of service, often located in different parts of a web application:
+ .
+  - Authentication providers
+  - User information providers
+ .
+ For example, an authentication provider may be oauth, using Flask-OAuth and
+ the user information may be stored in a relational database. Looseness of
+ the framework is provided by using signals as the interface.
+ .
+ This is the Python 3 version of the package.
