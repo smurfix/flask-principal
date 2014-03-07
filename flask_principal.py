@@ -99,7 +99,7 @@ TypeNeed.__doc__ = """A need with the method preset to `"type"`."""
 
 
 ActionNeed = partial(Need, 'action')
-TypeNeed.__doc__ = """A need with the method preset to `"action"`."""
+ActionNeed.__doc__ = """A need with the method preset to `"action"`."""
 
 
 ItemNeed = namedtuple('ItemNeed', ['method', 'value', 'type'])
@@ -482,5 +482,5 @@ class Principal(object):
     def _is_static_route(self):
         return (
             self.skip_static and
-            request.path.startswith(self._static_path)
+            (self._static_path and request.path.startswith(self._static_path))
         )

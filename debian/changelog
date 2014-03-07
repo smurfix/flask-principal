@@ -1,3 +1,9 @@
+flask-principal (0.4.0+git1-81ee6b7d6-1) unstable; urgency=low
+
+  * Upstream merge from git
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 07 Mar 2014 13:53:06 +0100
+
 flask-principal (0.4.0-1) unstable; urgency=low
 
   * Initial release. Closes: 718555
